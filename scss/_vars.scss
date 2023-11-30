@@ -1,0 +1,62 @@
+$titlePink: #E43071;
+$defolt: #424242;
+$text-gray: #D9DBE1;
+
+%title-font {
+    font-family: 'poppins', sans-serif;
+    font-weight: 700;
+}
+
+%btn-pink {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 37px;
+    padding: 0px;
+    height: 68px;
+    width: 237px;
+    border-radius: 39px;
+    background-color: $titlePink;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        background-color: #BE285E;
+    }
+   
+}
+
+%btn-border-pink {
+    color: $titlePink ;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 37px;
+    border-radius: 39px;
+    border: 2px $titlePink solid;
+    padding: 0px;
+    height: 68px;
+    width: 237px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        color: #BE285E;
+        border: 2px #BE285E solid;
+    }
+    
+
+}
+
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+    @return m#{i}n(#{$numbers});
+}
